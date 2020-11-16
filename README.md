@@ -1,6 +1,6 @@
 # Ideal-Image-Retrieval-using-GANs
 
-# Quick Reminder on Generative Adversarial Networks
+ # Quick Reminder on Generative Adversarial Networks
 
  In Generative Adversarial Networks, two networks train against each other. The generator misleads the discriminator by creating compelling fake inputs. The discriminator tells  if an input is real or artificial.
 
