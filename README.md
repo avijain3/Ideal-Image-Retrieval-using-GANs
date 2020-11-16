@@ -1,30 +1,30 @@
 # Ideal-Image-Retrieval-using-GANs
 
-Quick Reminder on Generative Adversarial Networks
+# Quick Reminder on Generative Adversarial Networks
 
  In Generative Adversarial Networks, two networks train against each other. The generator misleads the discriminator by creating compelling fake inputs. The discriminator tells  if an input is real or artificial.
 
 There are 3 major steps in the training:
 
- Use the generator to create fake inputs based on noise
+ 1) Use the generator to create fake inputs based on noise
 
- Train the discriminator with both real and fake inputs
+ 2) Train the discriminator with both real and fake inputs
 
- Train the whole model: the model is built with the discriminator chained to the generator. The discriminator's weights are frozen in this step.
+ 3) Train the whole model: the model is built with the discriminator chained to the generator. The discriminator's weights are frozen in this step.
 
-The Model
+# The Model
 
  The training process stays the same. First, let’s take a look at the neural network architectures!
 
-The Generator
+# The Generator
 
  The generator aims at reproducing sharp images. The network is based on ResNet blocks. It keeps track of the evolutions applied to the original blurred image
 
-The Discriminator
+# The Discriminator
 
  The objective is to determine if an input image is artificially created. Therefore, the discriminator’s architecture is convolutional and outputs a single value.
 
-Losses
+# Losses
 
  We extract losses at two levels, at the end of the generator and at the end of the full model.
 
